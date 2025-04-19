@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid layout design system</title>
+    <style>
+
+           .container {
+               display: grid;
+               grid-template-columns: 200px 1fr 1fr;
+               grid-template-rows: 30px auto;
+               grid-template-areas: 'sidebar navbar' "sidebar dashboard" "sidebar footer";
+              gap: 10px;
+           }
+           .navbar, .sidebar,  .dashboard {
+               padding: 6px 10px;
+           }
+           .navbar {
+              background: red;
+              grid-area: navbar;
+           }
+           .sidebar {
+             background: blue;
+             grid-area: sidebar;
+             height: 100vh;
+           }
+           .dashbaord {
+              background-color: cadetblue;
+              grid-area: dashboard;
+              height: 100vh;
+           }
+           .footer {
+              background: rebeccapurple;
+              grid-column: 2;
+              grid-row: 3;
+           }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container">
+          <div class="navbar">
+              navbar
+          </div>
+          <div class="sidebar">
+              sidebar
+          </div>
+          <div class="dashbaord">
+            dashboard
+        </div>
+        <div class="footer">
+              footer
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

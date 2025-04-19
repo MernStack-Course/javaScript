@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+          .container {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              align-content:center;
+              justify-content: center;
+              background: linear-gradient(to-right red blue);
+          }
+
+          .gallery {
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: auto;
+            gap: 10px;
+          }
+          .gallery img {
+              width: 200px;
+              height: 200px;
+              border-radius: 10px;
+          }
+          .gallery .content {
+              padding: 10px;
+              box-shadow: 0 0 6px #ccc;
+              border-radius: 10px;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="gallery">
+            <div class="content">
+                <img src="images/image(1).jpg" alt="" />
+              </div>
+              <div class="content">
+                <img src="images/image(2).jpg" alt="" />
+              </div>
+              <div class="content">
+                <img src="images/image(3).jpg" alt="" />
+              </div>
+              <div class="content">
+                <img src="images/image(4) copy.jpg" alt="" />
+              </div>
+              <div class="content">
+                <img src="images/image(5).jpg" alt="" />
+              </div>
+              <div class="content">
+                <img src="./images/image(6).jpg" alt="" />
+              </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+          .main-contianer {
+            margin-top: 30px;
+            text-align: center;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+          }
+          .container {
+              margin-top: 20px;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows:   auto;
+              width: 80%;
+              padding: 10px 20px;
+              box-shadow: 0 0 2px #ab7e7e;
+              border-radius: 6px;
+
+          }
+          input, button {
+              padding: 8px 6px;
+
+          }
+    </style>
+</head>
+<body>
+    <div class="main-contianer">
+         <div class="header">
+              <input id="serach" type="text" placeholder="Search ... "/>
+              <button id="serachBtn">Search</button>
+         </div>   
+         <div class="container"></div>   
+    </div>
+
+
+    <script src="search.js"></script>
+</body>
+</html>
